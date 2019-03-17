@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  form(method="POST" action="/upload" enctype="multipart/form-data")
+    input(type="text" name="message" value="hello")
+    br
+    input(type="file" name="file")
+    br
+    input(type="submit" value="SUBMIT")
